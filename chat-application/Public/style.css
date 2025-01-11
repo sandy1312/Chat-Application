@@ -1,0 +1,104 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: #333;
+}
+
+/* Chat container styles */
+.chat-container {
+  width: 400px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #4caf50;
+  padding: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+}
+
+/* Messages display area */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Individual message styles */
+.messages div {
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: #e0f7e9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input container */
+input#messageInput {
+  width: calc(100% - 90px);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Send button */
+button#sendMessageBtn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button#sendMessageBtn:hover {
+  background-color: #45a049;
+}
+
+/* Add a sticky footer for input and button */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Scrollbar customization */
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background-color: #45a049;
+}
